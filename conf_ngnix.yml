@@ -1,0 +1,19 @@
+---
+- name: List EC2 instances
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      apt:    
+        cache_valid_time: 86400
+        pkg:
+          - nginx
+
+    - name: Configure index.html
+      template:
+        src: template.j2
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
