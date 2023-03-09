@@ -121,7 +121,7 @@ Abra um terminal e navegue até o diretório onde você deseja criar o arquivo d
 Ele criará uma nova instância EC2 na sua conta AWS com as especificações fornecidas no playbook. A partir daqui, você pode personalizar ainda mais o playbook para atender às suas necessidades, como a instalação de software na instância ou a configuração de regras de firewall.
 
 ## Breve explicação do playbook
--   Essas são as principais configurações definidas no playbook que ajudam a definir o escopo da execução do playbook e configurar as conexões e fatos do host.
+Essas são as principais configurações definidas no playbook que ajudam a definir o escopo da execução do playbook e configurar as conexões e fatos do host.
 
 -   `name`: Nome do playbook ou da tarefa que está sendo executada. Neste caso, é definido como `Criar uma instância EC2`.
     
